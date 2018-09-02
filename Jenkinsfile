@@ -23,12 +23,12 @@ pipeline {
                             docker rm ${CONTAINER_NAME}
                           fi
                           docker build -t ${IMAGE_NAME} .
-                          CID=$(docker run -d -p 5001:5001 -v /tmp/app:/tmp/app --hostname=${CONTAINER_NAME} --name=${CONTAINER_NAME} ${IMAGE_NAME})
+                          CID=$(docker run -d -p 5000:5000 -v /tmp/app:/tmp/app --hostname=${CONTAINER_NAME} --name=${CONTAINER_NAME} ${IMAGE_NAME})
                           echo CONTAINER_ID=${CID}
                           CIP=$(docker inspect --format '{{ .NetworkSettings.IPAddress }}' ${CID})
                           echo CONTAINER_IP=${CIP}
-                          echo Increase counter using: curl -X POST "http://${CIP}:5001/"
-                          echo Display counter using: curl http://${CIP}:5001/'''
+                          echo Increase counter using: curl -X POST "http://${CIP}:5000/"
+                          echo Display counter using: curl http://${CIP}:5000/'''
                    
             }
         }
