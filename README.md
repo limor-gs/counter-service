@@ -22,7 +22,7 @@ Prints the container ip
 Prints examples of POST and GET commands using the container ip.
 
 ## Instructions
-Access Jenkins by the following url - https://34.245.83.28/
+Access Jenkins by the following url - https://34.255.57.138/
 User: admin
 Password: admin
 
@@ -34,11 +34,11 @@ There are two options to send the requests
 
 #### Increase counter using:
 curl -X POST http://<container ip>:5000/
-or
+**or**
 curl -X POST "http://<host public ip>/<branch_name>"
 #### Display counter using:
 curl http://<container ip>:5000/
-or using the browser
+**or** using the browser
 http://<host public ip>/<branch_name>
 
 
