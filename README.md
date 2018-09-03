@@ -40,6 +40,7 @@ curl -X POST "http://<host_public_ip>/<branch_name>"
 curl http://<container_ip>:5000/
 **or** using the browser
 http://<host_public_ip>/<branch_name>
+http://34.255.57.138/dev
 
 
 
