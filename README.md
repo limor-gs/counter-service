@@ -33,9 +33,9 @@ every branch.
 There are two options to send the requests
 
 #### Increase counter using:
-curl -X POST http://<container_ip>:5000/ . 
+curl -X POST http://<container_ip>:5000/ 
 **or** . 
-curl -X POST "http://<host_public_ip>/<branch_name>" . 
+curl -X POST "http://<host_public_ip>/<branch_name>"
 #### Display counter using:
 curl http://<container_ip>:5000/ . 
 **or** using the browser . 
