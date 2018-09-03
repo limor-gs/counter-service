@@ -39,7 +39,8 @@ curl -X POST "http://<host_public_ip>/<branch_name>"
 #### Display counter using:
 curl http://<container_ip>:5000/   
 **or** using the browser   
-http://<host_public_ip>/<branch_name>   
+http://<host_public_ip>/<branch_name>  
+For example:
 http://34.255.57.138/dev
 
 
